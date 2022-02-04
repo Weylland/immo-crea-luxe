@@ -25,6 +25,51 @@
   </head>
 
   <body>
+    <!-- ----- MENU BURGER ----- -->
+
+    <div id="burgerMenu">
+        <i id="burgerMenuI" class="fas"></i>
+    </div>
+
+    <!-- ----- SCROLL TO TOP ----- -->
+
+    <div id="scrollToTop" class="scrollToTopHidden">
+        <i id="scrollToTopI" class="fa fa-arrow-up"></i>
+    </div>
+
+    <!-- ----- LARGE NAV ----- -->
+
+    <nav id="largeNav">
+        <div id="largeNavTop">
+          <a href="#"><img src="./asset/img/logo.png" alt="Logo"></a>
+          <p>Immo'Créa Luxe</p>
+        </div>
+        <div id="largeNavBottom">
+          <ul>
+            <li><a href="#" class="navActive">Accueil</a></li>
+            <li><a href="./maisons">Maisons</a></li>
+            <li><a href="./agents">Agents</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- ----- SMALL NAV ----- -->
+
+      <nav id="smallNav" class="smallNavHidden">
+        <div id="smallNavTop">
+          <a href="#"><img src="./asset/img/logo.png" alt="Logo"></a>
+          <p>Immo'Créa Luxe</p>
+        </div>
+        <div id="smallNavBottom">
+          <ul>
+            <li><a href="#" class="navActive">Accueil</a></li>
+            <li><a href="./maisons">Maisons</a></li>
+            <li><a href="./agents">Agents</a></li>
+          </ul>
+        </div>
+        <div id="smallNavSocial"></div>
+      </nav>
+
     <!-- ------- HEADER ------- -->
 
     <section class="header">
@@ -82,12 +127,6 @@
         <a href="maison.html"
           ><img src="asset/img/img-1-carrousel.png" alt="" id="slide"
         /></a>
-        <div class="text">
-          <p>Chateau de la X-Corporation</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis.
-          </p>
-        </div>
         <div id="precedent" onclick="ChangeSlide(-1)"><</div>
         <div id="suivant" onclick="ChangeSlide(1)">></div>
       </div>

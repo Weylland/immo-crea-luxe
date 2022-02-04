@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+@font-face {
+  font-family: "industrial";
+  src: url("../asset/font/IND736N.ttf") format("truetype");
+}
+
+/* -- ------------- SECTION HEADER ---------------- -- */
+
+section.header {
+  background-image: url(../asset/img/header-4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+section.header div.border {
+  margin: 0 200px;
+  border-left: 1px solid #dfc173;
+  border-right: 1px solid #dfc173;
+  height: 100vh;
+}
+
+section.header div.border p:nth-of-type(1) {
+  padding-top: 120px;
+  color: #dfc173;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+section.header div.border p:nth-of-type(2) {
+  color: white;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 200;
+  margin-bottom: 80px;
+}
+
+section.header div.border div.title {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.header div.border div.title div.ligne {
+  height: 1px;
+  background-color: #dfc173;
+  width: 100px;
+}
+
+section.header div.border div.title h1 {
+  font-size: 80px;
+  color: white;
+  font-family: "industrial";
+  font-weight: lighter;
+  padding: 0 50px;
+}
+
+section.header div.border a {
+  color: white;
+  padding: 15px 50px;
+  transition: all 0.6s ease-in-out;
+  border: #eedaa8 2px solid;
+}
+
+section.header div.border a:hover {
+  padding: 15px 30px;
+}
+
+section.header div.social {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 85px;
+  bottom: 150px;
+}
+
+section.header div.social a i {
+  color: white;
+  font-size: 25px;
+  padding: 10px 0;
+  transition: all 0.5s;
+}
+
+section.header div.social a i:hover {
+  color: #dfc173;
+}
+
+/* -- ------ SECTION PRESENTATION ------ -- */
+
+section.presentation {
+  margin: 150px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* IMG */
+
+section.presentation figure {
+  width: 50%;
+  position: relative;
+}
+
+section.presentation figure::after {
+  content: url(../asset/img/pattern-presentation.png);
+  position: absolute;
+  top: 80px;
+  right: -80px;
+  z-index: -1;
+}
+
+section.presentation figure img {
+  width: 100%;
+}
+
+/* TEXT */
+
+section.presentation div.text {
+  width: 50%;
+  text-align: right;
+  margin: 0 200px 0 200px;
+}
+
+section.presentation div.text h2 {
+  font-size: 48px;
+  font-family: "industrial";
+  color: #dfc173;
+  font-weight: lighter;
+}
+
+section.presentation div.text div.sous-title {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+section.presentation div.text div.sous-title div.ligne {
+  background-color: #dfc173;
+  height: 1px;
+  width: 75%;
+  margin-top: 10px;
+}
+
+section.presentation div.text div.sous-title p {
+  color: #dfc173;
+  font-weight: 500;
+  width: 25%;
+}
+
+section.presentation div.text p {
+  font-weight: 200;
+  font-size: 16px;
+}
+
+section.presentation div.text p:nth-of-type(2) {
+  margin-bottom: 50px;
+}
+
+section.presentation div.text a {
+  border: #dfc173 1px solid;
+  padding: 10px 20px;
+  color: black;
+  font-size: 16px;
+}
+
+/* -- ---------- SECTION CARROUSEL -------------- -- */
+
+section.carrousel {
+  margin: 250px 0 100px 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+#slider {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+section.carrousel img {
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+section.carrousel img:hover {
+  transform: scale(1.02);
+}
+
+section.carrousel div div.text {
+  position: absolute;
+  text-align: center;
+  left: 20%;
+  right: 20%;
+  color: white;
+  bottom: 50px;
+  font-size: 16px;
+}
+
+section.carrousel div div.text p:nth-of-type(1) {
+  font-size: 20px;
+}
+
+section.carrousel div div.text p:nth-of-type(2) {
+  font-weight: 200;
+}
+
+#precedent,
+#suivant {
+  cursor: pointer;
+  transition: opacity 0.5s ease;
+  opacity: 0.2;
+  position: absolute;
+  font-size: 50px;
+  color: white;
+  background-color: rgba(95, 89, 80, 0.37);
+  padding: 0 10px;
+  border-radius: 3px;
+}
+
+#precedent {
+  left: 30px;
+  transition: ease-in-out 0.3s;
+}
+
+#suivant {
+  right: 30px;
+  transition: ease-in-out 0.3s;
+}
+
+#slider:hover #precedent,
+#slider:hover #suivant {
+  opacity: 1;
+}
+
+#precedent:hover,
+#suivant:hover {
+  background-color: rgba(107, 100, 87, 0.616);
+}

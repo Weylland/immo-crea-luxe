@@ -87,3 +87,12 @@ burgerMenu.addEventListener("click", () => {
     smallNav.classList.add("smallNavHidden");
   }
 });
+
+// FLIP CARD
+
+const cards = document.querySelectorAll(".servicesSquares");
+
+function flipCard() {
+  this.classList.toggle("flip");
+}
+cards.forEach((Square) => Square.addEventListener("click", flipCard));

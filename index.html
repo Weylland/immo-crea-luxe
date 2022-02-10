@@ -1,138 +1,297 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accueil Page Immo Crea</title>
 
-    <!-- ------ FONT POPPINS ------ -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accueil Page Immo Crea</title>
 
-    <!-- ------ LINK FONTAWESOME ------ -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-    />
+  <!-- ------ FONT POPPINS ------ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+    rel="stylesheet" />
 
-    <!-- ------ LINK CSS ------- -->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+  <!-- ------ LINK FONTAWESOME ------ -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" />
 
-  <body>
-    <!-- ----- MENU BURGER ----- -->
+  <!-- ------ LINK CSS ------- -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-    <div id="burgerMenu">
-        <i id="burgerMenuI" class="fas"></i>
+<body>
+  <!-- ----- MENU BURGER ----- -->
+
+  <div id="burgerMenu">
+    <i id="burgerMenuI" class="fas"></i>
+  </div>
+
+  <!-- ----- SCROLL TO TOP ----- -->
+
+  <div id="scrollToTop" class="scrollToTopHidden">
+    <i id="scrollToTopI" class="fa fa-arrow-up"></i>
+  </div>
+
+  <!-- ----- LARGE NAV ----- -->
+
+  <nav id="largeNav">
+    <div id="largeNavTop">
+      <a href="#">
+        <img src="./asset/img/logo.png" alt="Logo">
+      </a>
+      <p>Immo'Créa Luxe</p>
+    </div>
+    <div id="largeNavBottom">
+      <ul>
+        <li>
+          <a href="#" class="navActive">Accueil</a>
+        </li>
+        <li>
+          <a href="./maisons">Maisons</a>
+        </li>
+        <li>
+          <a href="./agents">Agents</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ----- SMALL NAV ----- -->
+
+  <nav id="smallNav" class="smallNavHidden">
+    <div id="smallNavTop">
+      <a href="#">
+        <img src="./asset/img/logo.png" alt="Logo">
+      </a>
+      <p>Immo'Créa Luxe</p>
+    </div>
+    <div id="smallNavBottom">
+      <ul>
+        <li>
+          <a href="#" class="navActive">Accueil</a>
+        </li>
+        <li>
+          <a href="./maisons">Maisons</a>
+        </li>
+        <li>
+          <a href="./agents">Agents</a>
+        </li>
+      </ul>
+    </div>
+    <div id="smallNavSocial"></div>
+  </nav>
+
+  <!-- ------- HEADER ------- -->
+
+  <section class="header">
+    <div class="border">
+      <p>Une agence à votre écoute</p>
+      <div class="title">
+        <div class="ligne"></div>
+        <h1>Agence immo'Créa Luxe</h1>
+        <div class="ligne"></div>
+      </div>
+      <p>
+        Des projets immobiliers d'ambition, des rêves créatifs, des envies de luxe
+      </p>
+      <a href="#top">Lorem Ipsum</a>
+    </div>
+    <div class="social">
+      <a href="">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- ------ SECTION PRESENTATION ------ -->
+
+  <section class="presentation">
+    <figure>
+      <img src="asset/img/img-presentation.png" alt="" />
+    </figure>
+    <div class="text">
+      <h2>Présentation de l'agence</h2>
+      <div class="sous-title">
+        <div class="ligne"></div>
+        <p>Lorem ipsum dolor</p>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quo facere officia illum aliquid at numquam adipisci
+        saepe ut quidem labore natus. Voluptatibus illo tenetur nemo facere quasi, sit quia?
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam facere magnam cum, explicabo ut veritatis error cupiditate
+        quisquam! Ut obcaecati, praesentium eveniet cupiditate voluptatem eaque rem eum nihil sint dicta?
+      </p>
+      <a href="contact.html">Contacter l'équipe</a>
+    </div>
+  </section>
+
+  <!-- ------ CAROUSSEL ------ -->
+
+  <section class="carrousel">
+    <div id="slider">
+      <a href="maison.html">
+        <img src="asset/img/img-1-carrousel.png" alt="" id="slide" />
+      </a>
+      <div id="precedent" onclick="ChangeSlide(-1)">
+        <</div>
+          <div id="suivant" onclick="ChangeSlide(1)">></div>
+      </div>
+  </section>
+
+  <!-- ----- SERVICES ----- -->
+
+  <section class="services">
+    <div class="servicesTitle">
+      <div class="servicesTraitG"></div>
+      <h2 class="servicesH2">Les services de l'agence</h2>
+      <div class="servicesTraitD"></div>
     </div>
 
-    <!-- ----- SCROLL TO TOP ----- -->
+    <div class="servicesBG">
 
-    <div id="scrollToTop" class="scrollToTopHidden">
-        <i id="scrollToTopI" class="fa fa-arrow-up"></i>
+      <div class="servicesSquareCont">
+
+        <div class="servicesSquaresZoom">
+          <div class="servicesSquares">
+            <div class="servicesSquares_front">
+              <img src="./asset/img/icon-conseil.png" alt="conseil">
+              <h3>Conseils</h3>
+              <p>Un conseil de qualité par des personnes qualifiées</p>
+            </div>
+            <div class="servicesSquares_back">
+              <p>Une équipe d'agents immobiliers qui vous écoutent pour vous conseiller de la meilleure manière</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="servicesSquaresZoom">
+          <div class="servicesSquares">
+            <div class="servicesSquares_front">
+              <img src="./asset/img/icon-ecoute.png" alt="ecoute">
+              <h3>Ecoute</h3>
+              <p>Une equipe de professionnels à votre écoute</p>
+            </div>
+            <div class="servicesSquares_back">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nostrum accusamus at harum repellat impedit!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="servicesSquaresZoom">
+          <div class="servicesSquares">
+            <div class="servicesSquares_front">
+              <img src="./asset/img/icon-orientation.png" alt="orientation">
+              <h3>Orientations</h3>
+              <p>Nous vous orientons durant la durée du projet</p>
+            </div>
+            <div class="servicesSquares_back">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui facilis nesciunt, amet asperiores repellendus</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="servicesSquaresZoom">
+          <div class="servicesSquares">
+            <div class="servicesSquares_front">
+              <img src="./asset/img/icon-visit.png" alt="visite">
+              <h3>Visite</h3>
+              <p>Nous organisons les visites des biens avec soins</p>
+            </div>
+            <div class="servicesSquares_back">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque deleniti pariatur quae quos quia qui eius nesciunt</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
     </div>
 
-    <!-- ----- LARGE NAV ----- -->
+  </section>
 
-    <nav id="largeNav">
-        <div id="largeNavTop">
-          <a href="#"><img src="./asset/img/logo.png" alt="Logo"></a>
-          <p>Immo'Créa Luxe</p>
-        </div>
-        <div id="largeNavBottom">
-          <ul>
-            <li><a href="#" class="navActive">Accueil</a></li>
-            <li><a href="./maisons">Maisons</a></li>
-            <li><a href="./agents">Agents</a></li>
-          </ul>
-        </div>
-      </nav>
+  <!-- ----- SECTEUR ----- -->
 
-      <!-- ----- SMALL NAV ----- -->
+  <section class="secteurs">
 
-      <nav id="smallNav" class="smallNavHidden">
-        <div id="smallNavTop">
-          <a href="#"><img src="./asset/img/logo.png" alt="Logo"></a>
-          <p>Immo'Créa Luxe</p>
-        </div>
-        <div id="smallNavBottom">
-          <ul>
-            <li><a href="#" class="navActive">Accueil</a></li>
-            <li><a href="./maisons">Maisons</a></li>
-            <li><a href="./agents">Agents</a></li>
-          </ul>
-        </div>
-        <div id="smallNavSocial"></div>
-      </nav>
+    <div class="secteursTitle">
+      <h2 class="secteursH2">Les secteurs de l'agence</h2>
+      <div class="secteursTraitD"></div>
+    </div>
 
-    <!-- ------- HEADER ------- -->
+    <div class="secteursPres">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure error eaque minima. Nesciunt voluptatibus quod, cumque dolor
+        rerum voluptates dolorem? Vero quasi asperiores explicabo. Officiis, magni modi doloribus a repellat illo velit nostrum
+        dolorem explicabo hic praesentium dolorum, nam consequatur delectus accusamus aperiam sunt, nemo nobis aut? Accusamus
+        placeat cupiditate odit culpa nostrum dolore vel fugiat molestias, aliquid voluptate facilis, enim similique, sunt
+        laboriosam corrupti fuga pariatur inventore nesciunt quod. Non molestiae consequatur doloremque facilis incidunt
+        dolor, doloribus modi nulla beatae sequi recusandae nesciunt error deleniti possimus eveniet, laborum corrupti, nobis
+        dolore aliquam nihil ipsum quod assumenda quae? Assumenda, beatae!
+      </p>
+    </div>
 
-    <section class="header">
-      <div class="border">
-        <p>Une agence à votre écoute</p>
-        <div class="title">
-          <div class="ligne"></div>
-          <h1>Agence immo'Créa Luxe</h1>
-          <div class="ligne"></div>
+    <div class="secteursContGlob">
+
+      <div class="secteursCont">
+
+        <div class="secteursCard">
+          <div class="secteursPhoto">
+            <a href="#">
+              <img src="./asset/img/img-arras.png" alt="Arras">
+            </a>
+          </div>
+          <div class="secteursCardTitle">
+            <h3>Secteur d'Arras</h3>
+          </div>
+          <div class="secteursCardTxt">
+            <p>Résider dans le secteur d'Arras, où il fait bon vivre. Une nature variée alternant lacs et marais, bois et campagne
+              vallonnée, ou bord de canaux et cours d’eau.</p>
+          </div>
         </div>
-        <p>
-          Des projets immobiliers d'ambition, des rêves créatifs, des envies de
-          luxe
-        </p>
-        <a href="#top">Lorem Ipsum</a>
+
+        <div class="secteursCard">
+          <div class="secteursPhoto">
+            <img src="./asset/img/img-lille.png" alt="Lille">
+          </div>
+          <div class="secteursCardTitle">
+            <h3>Secteur de Lille</h3>
+          </div>
+          <div class="secteursCardTxt">
+            <p>Par sa vitalité culturelle, sa qualité de vie, son dynamisme économique et son énergie festive, le secteur Lillois
+              se présente désormais comme l'incontournable ...</p>
+          </div>
+        </div>
+
+        <div class="secteursCard">
+          <div class="secteursPhoto">
+            <img src="./asset/img/img-touquet.png" alt="Touquet">
+          </div>
+          <div class="secteursCardTitle">
+            <h3>Secteur du Touquet</h3>
+          </div>
+          <div class="secteursCardTxt">
+            <p>Ce charmant secteur de la Côte d'Opale possède un très beau patrimoine architectural anglo-normand représenté
+              par de jolies villas nichées dans les pinèdes. </p>
+          </div>
+        </div>
+
       </div>
-      <div class="social">
-        <a href=""><i class="fab fa-twitter"></i></a>
-        <a href=""><i class="fab fa-instagram"></i></a>
-        <a href=""><i class="fab fa-facebook-f"></i></a>
-      </div>
-    </section>
 
-    <!-- ------ SECTION PRESENTATION ------ -->
+    </div>
 
-    <section class="presentation">
-      <figure>
-        <img src="asset/img/img-presentation.png" alt="" />
-      </figure>
-      <div class="text">
-        <h2>Présentation de l'agence</h2>
-        <div class="sous-title">
-          <div class="ligne"></div>
-          <p>Lorem ipsum dolor</p>
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
-          quo facere officia illum aliquid at numquam adipisci saepe ut quidem
-          labore natus. Voluptatibus illo tenetur nemo facere quasi, sit quia?
-        </p>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam facere
-          magnam cum, explicabo ut veritatis error cupiditate quisquam! Ut
-          obcaecati, praesentium eveniet cupiditate voluptatem eaque rem eum
-          nihil sint dicta?
-        </p>
-        <a href="contact.html">Contacter l'équipe</a>
-      </div>
-    </section>
+  </section>
 
-    <!-- ------ CAROUSSEL ------ -->
+  <!-- ------ FICHIER JS ------- -->
+  <script src="js/index.js"></script>
+</body>
 
-    <section class="carrousel">
-      <div id="slider">
-        <a href="maison.html"
-          ><img src="asset/img/img-1-carrousel.png" alt="" id="slide"
-        /></a>
-        <div id="precedent" onclick="ChangeSlide(-1)"><</div>
-        <div id="suivant" onclick="ChangeSlide(1)">></div>
-      </div>
-    </section>
-
-    <!-- ------ FICHIER JS ------- -->
-    <script src="js/index.js"></script>
-  </body>
 </html>

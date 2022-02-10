@@ -5,10 +5,6 @@
   scroll-behavior: smooth;
 }
 
-img {
-  display: block;
-}
-
 a {
   text-decoration: none;
 }
@@ -436,7 +432,330 @@ section.carrousel img:hover {
   background-color: rgba(107, 100, 87, 0.616);
 }
 
+/* -- ---------- SECTION SERVICES -------------- -- */
+
+.services,.secteurs{
+  height:100vh;
+  display:block;
+}
+
+.servicesTitle,.maison_titre_page{
+  display:flex;
+  justify-content: center;
+  width:80%;
+  height:min-content;
+  align-items:center;
+  position:relative;   
+  padding-top: 50px;
+  margin:auto;
+}
+.maison_titre_page{
+  padding-bottom:70px;
+}
+.servicesTraitG, .servicesTraitD,.maison_traitG,.maison_traitD{
+  height:1px;
+  width:30%;
+  background-color:#dfc173; 
+  align-self: center;
+}
+
+.servicesH2,
+.secteursH2,
+.maison_h1{
+  margin:50px 20px;
+  font-size: 48px;
+  color:#dfc173;
+  font-family: "industrial";
+}
+
+.secteursH2 {
+  margin:50px 20px 50px 0;
+}
+
+.servicesH2{
+  text-align: center;
+}
+
+.servicesBG {
+  display: flex;
+  height:min-content;
+  min-height: 500px;
+  width:100%;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  margin-top: 70px;
+
+}
+
+.servicesBG {
+  background-image: url(../asset/img/bg-marbre.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+}
+
+.servicesSquaresZoom{
+  width:270px;
+  height:260px;
+  margin: 10px;
+}
+
+.servicesSquareCont {
+  width:70%;
+  display:flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.servicesSquares{
+  width:100%;
+  height:100%;
+  box-shadow: 3px 3px 3px grey;
+  text-align: center;
+  cursor:pointer;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+  
+}
+
+.servicesSquares_front {
+  width: 100%;
+  height: 100%;
+  transform: rotateX(0deg);
+  background-color: white;
+}
+
+.servicesSquares_front img{
+  max-width: 30%;
+  height: auto;
+  position: relative;
+  padding: 30px 0 10px 0;  
+}
+
+.servicesSquares_front h3{
+  position: relative;
+  font-family:"industrial";
+  font-size: 24px;
+  color:#dfc173;   
+}
+
+.servicesSquares_front p{
+  position: relative;
+  font-size: 16px;
+  margin: 10px 20px 20px;
+}
+
+
+/*zoom et rotation cartess*/
+
+.servicesSquaresZoom:hover{
+  transform:scale(1.02); 
+  transition:0.7s;  
+}
+.servicesSquares_front:Hover{
+  box-shadow: 3px 3px 5px rgb(133, 126, 126);
+  border: 2px #dfc173 solid;
+}
+
+/*fin zoom et rotation*/
+
+.servicesSquares_back{
+  transform: rotateY(180deg);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  left: 0;
+  top: 0;
+  background-color: white;
+  height: 100%;   
+}
+
+.servicesSquares_back p{
+  padding: 20px;
+}
+
+.servicesSquares_front,.servicesSquares_back{
+  backface-visibility: hidden;
+
+}
+
+.servicesSquares.flip {
+  transform: rotateY(180deg); 
+}
+
+/* -- ---------- SECTION SECTEUR -------------- -- */
+
+.secteursTitle{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  height:min-content;
+  position: relative;
+  padding-top:50px;
+}
+
+.secteursTraitD{
+  height:1px;
+  width:50%;
+  margin-top: 15px;
+  background-color:#dfc173; 
+}
+
+.secteurs p{
+   align-self: flex-start;
+   font-size: 16px;
+   display:block;
+}
+
+.secteursPres {
+  height: min-content;
+  margin:auto;
+  position: relative;
+  padding:30px 0;
+  width:80%;
+
+}
+
+.secteursContGlob{
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   height: min-content;
+   position: relative;
+   margin: 50px 0;
+}
+
+.secteursCont{
+   display: flex;
+   width:70%;
+   height:100%;
+   justify-content: space-around;
+   align-items: center;
+   
+}
+
+.secteursCard{
+  display: block;
+  max-height: 100%;;
+  width: 30%;
+  min-width: 250px;
+  box-shadow: grey 4px 4px 4px;
+  background-color: #f9f7ef;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.secteursCard:hover{
+  transform:scale(1.02);
+  transition: 0.7s ease;
+}
+
+.secteursPhoto img{
+  width: 100%;
+  cursor: pointer;
+}
+
+.secteursCardTitle{
+  text-align: center;
+  font-family: industrial;
+  color:#dfc173;
+  font-size: 24px;
+  height: 10%;
+  text-shadow: grey;
+  padding: 20px;
+}
+
+.secteursCardTxt{
+  text-align: center;
+  padding:10px 10px;
+  height:40%;  
+  padding: 20px;
+}
+
+
 /* ----- MEDIA ----- */
+
+@media screen and (max-width: 1625px) {
+  /* ----- SECTION PRESENTATION ------ */
+  section.presentation figure::after {
+    top: 20px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  /* ---- HEADER ---- */
+  section.header div.border {
+    margin: 0 100px;
+  }
+  section.header div.social {
+    right: 35px;
+  }
+
+  /* ---- SECTION PRESENTATION ----- */
+  section.presentation figure::after {
+    top: -90px;
+  }
+  section.presentation div.text {
+    margin: 0 100px 0 150px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* ---- SECTION PRESENTATION ---- */
+  section.presentation {
+    flex-direction: column;
+  }
+  section.presentation figure {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  section.presentation figure::after {
+    left: 0;
+    right: 0;
+  }
+  section.presentation div.text {
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    padding: 80px 100px 0 100px;
+  }
+  section.presentation div.text div.sous-title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  section.presentation div.text div.sous-title div.ligne {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  section.presentation div.text div.sous-title p {
+    width: 100%;
+  }
+
+  /* ----- SECTION SERVICE ET SECTEUR ----- */
+
+  .servicesSquareCont{
+    width:95%;
+    justify-content: center;
+  }
+  .services,.secteurs{
+    height:min-content;
+    align-items: center;
+  }
+  /* .servicesSquares,.servicesSquaresZoom{
+    width:160px;
+    height:160px;   
+  } */
+
+  .secteursCont{
+    flex-direction: column;
+  }
+}
 
 @media screen and (max-width: 800px) {
   /* ----- LARGE NAV ----- */
@@ -453,5 +772,32 @@ section.carrousel img:hover {
   #scrollToTop {
     width: 50px;
     height: 50px;
+  }
+
+  /* ---- SECTION HEADER ---- */
+  section.header div.border p:nth-of-type(1) {
+    padding-top: 150px;
+  }
+  section.header div.border div.title h1 {
+    font-size: 60px;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section.header div.border {
+    margin: 0 50px;
+  }
+  section.header div.social {
+    display: none;
+  }
+  section.presentation div.text {
+    padding: 150px 50px 0 50px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  section.presentation figure::after {
+    display: none;
   }
 }

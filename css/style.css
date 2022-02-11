@@ -777,6 +777,167 @@ footer a {
   align-items: center;
 }
 
+
+
+/* -- --------------------------------------- PAGE CONTACT ----------------------------*/
+
+/* -- ---- SECTION HEADER-CONTACT ---- -- */
+
+section.header-contact img {
+  width: 100%;
+  position: relative;
+  top: 220px;
+  margin-bottom: 225px;
+}
+
+/* -- ---- SECTION CONTACT ---- -- */
+
+section.contact {
+  background-color: #fff9f5;
+  padding: 100px 200px;
+  border-top: #dfc173 1px solid;
+  border-bottom: #dfc173 1px solid;
+}
+
+section.contact div.text {
+  margin-bottom: 50px;
+}
+
+section.contact div.text p {
+  color: #dfc173;
+  font-family: "industrial";
+  font-weight: lighter;
+  font-size: 48px;
+}
+
+section.contact div.text p:nth-of-type(3) {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 10px 0 50px 0;
+} 
+section.contact div.text hr {
+  border: none;
+  background-color: #dfc173;
+  height: 1px;
+  width: 20%;
+}
+
+section.contact div.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+section.contact div.container div.content {
+  width: 30%;
+  background-color: white;
+  height: 200px;
+  padding: 30px;
+  border: #dfc173 1px solid;
+  transition: all .5s ease-in-out;
+}
+
+section.contact div.container div.content:hover {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+section.contact div.container div.content:hover hr{
+  width: 40%;
+}
+
+section.contact div.container div.content p:nth-of-type(1) {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+section.contact div.container div.content hr {
+  border: none;
+  background-color: black;
+  height: 4px;
+  width: 15%;
+  transition: all .5s ease-in-out;
+}
+
+section.contact div.container div.content p:nth-of-type(2) {
+  margin-top: 50px;
+}
+
+/* -- ----- SECTION AGENTS ------ -- */
+
+section.agents {
+  margin: 100px 200px;
+}
+
+section.agents div.content-2 {
+  margin-bottom: 100px;
+  padding: 50px;
+  border: #dfc173 1px solid;
+  display: flex;
+  align-items: center;
+}
+
+section.agents div.content-2 figure {
+  width: 50%;
+}
+section.agents div.content-2 figure img {
+  margin: 0 auto;
+  display: block;
+  border: #dfc173 1px solid;
+  border-radius: 500px;
+  padding: 50px;
+  transition: all .5s ease-in-out;
+}
+
+section.agents div.content-2 figure img:hover {
+  transform: scale(1.02) rotate(2deg);
+}
+section.agents div.content-2 div.text-2 {
+  width: 50%;
+}
+
+section.agents div.content-2 div.text-2 p:nth-of-type(1){
+  font-family: "industrial";
+  font-size: 48px;
+  font-weight: lighter;
+  color: #dfc173;
+}
+
+section.agents div.content-2 div.text-2 p:nth-of-type(2){
+  font-family: "industrial";
+  font-size: 48px;
+  font-weight: lighter;
+  color: #dfc173;
+  margin-bottom: 50px;
+}
+
+section.agents div.content-2 div.text-2 p:nth-of-type(3) {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+section.agents div.content-2 div.text-2 p:nth-of-type(4) {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.lien a {
+  border: #dfc173 1px solid;
+  padding: 10px 30px;
+  color: black;
+  font-size: 16px;
+  font-weight: 300;
+  transition: all .5s ease-in-out;
+}
+
+.lien a:hover {
+  padding: 10px 20px;
+}
+
+.right {
+  text-align: right;
+}
+
 /* ----- MEDIA ----- */
 
 @media screen and (max-width: 1625px) {

@@ -9,9 +9,9 @@ const scrollToTop = document.getElementById("scrollToTop");
 //  CARROUSEL 
 
 let slide = new Array(
-  "asset/img/img-1-carrousel.png",
-  "asset/img/carrousel-2.png",
-  "asset/img/carrousel-3.png"
+  "asset/img/carrousel-1.png",
+  "asset/img/carrousel-2-wayne.png",
+  "asset/img/carrousel-3-stark.png"
 );
 
 let numero = 0;

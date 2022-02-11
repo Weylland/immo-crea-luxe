@@ -10,7 +10,8 @@
   <!-- ------ FONT POPPINS ------ -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
     rel="stylesheet" />
 
   <!-- ------ LINK FONTAWESOME ------ -->
@@ -112,9 +113,9 @@
 
   <!-- ------ SECTION PRESENTATION ------ -->
 
-  <section class="presentation">
+  <section class="presentation" id="pres">
     <figure>
-      <img src="asset/img/img-presentation.png" alt="" />
+      <img src="asset/img/agence-2.png" alt="" />
     </figure>
     <div class="text">
       <h2>Présentation de l'agence</h2>
@@ -123,11 +124,13 @@
         <p>Lorem ipsum dolor</p>
       </div>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quo facere officia illum aliquid at numquam adipisci
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quo facere officia illum aliquid at numquam
+        adipisci
         saepe ut quidem labore natus. Voluptatibus illo tenetur nemo facere quasi, sit quia?
       </p>
       <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam facere magnam cum, explicabo ut veritatis error cupiditate
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam facere magnam cum, explicabo ut veritatis error
+        cupiditate
         quisquam! Ut obcaecati, praesentium eveniet cupiditate voluptatem eaque rem eum nihil sint dicta?
       </p>
       <a href="contact.html">Contacter l'équipe</a>
@@ -136,20 +139,24 @@
 
   <!-- ------ CAROUSSEL ------ -->
 
-  <section class="carrousel">
+  <section class="carrousel" id="carrousel">
+      <div class="servicesTitle">
+        <div class="servicesTraitG"></div>
+        <h2 class="servicesH2">Les dernières maisons</h2>
+        <div class="servicesTraitD"></div>
+      </div>
     <div id="slider">
       <a href="maison.html">
         <img src="asset/img/img-1-carrousel.png" alt="" id="slide" />
       </a>
-      <div id="precedent" onclick="ChangeSlide(-1)">
-        <</div>
-          <div id="suivant" onclick="ChangeSlide(1)">></div>
-      </div>
+      <div id="precedent" onclick="ChangeSlide(-1)">&lt;</div>
+      <div id="suivant" onclick="ChangeSlide(1)">&gt;</div>
+    </div>
   </section>
 
   <!-- ----- SERVICES ----- -->
 
-  <section class="services">
+  <section class="services" id="services">
     <div class="servicesTitle">
       <div class="servicesTraitG"></div>
       <h2 class="servicesH2">Les services de l'agence</h2>
@@ -181,7 +188,8 @@
               <p>Une equipe de professionnels à votre écoute</p>
             </div>
             <div class="servicesSquares_back">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nostrum accusamus at harum repellat impedit!</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nostrum accusamus at harum repellat
+                impedit!</p>
             </div>
           </div>
         </div>
@@ -194,7 +202,8 @@
               <p>Nous vous orientons durant la durée du projet</p>
             </div>
             <div class="servicesSquares_back">
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui facilis nesciunt, amet asperiores repellendus</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui facilis nesciunt, amet asperiores
+                repellendus</p>
             </div>
           </div>
         </div>
@@ -207,7 +216,8 @@
               <p>Nous organisons les visites des biens avec soins</p>
             </div>
             <div class="servicesSquares_back">
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque deleniti pariatur quae quos quia qui eius nesciunt</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque deleniti pariatur quae quos quia qui
+                eius nesciunt</p>
             </div>
           </div>
         </div>
@@ -220,75 +230,151 @@
 
   <!-- ----- SECTEUR ----- -->
 
-  <section class="secteurs">
+  <section class="secteurs" id="secteurs">
 
-    <div class="secteursTitle">
-      <h2 class="secteursH2">Les secteurs de l'agence</h2>
-      <div class="secteursTraitD"></div>
+      <div class="secteursTitle">
+        <h2 class="secteursH2">Les secteurs de l'agence</h2>
+        <div class="secteursTraitD"></div>
+      </div>
+  
+      <div class="secteursPres">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure error eaque minima. Nesciunt voluptatibus quod, cumque dolor
+          rerum voluptates dolorem? Vero quasi asperiores explicabo. Officiis, magni modi doloribus a repellat illo velit nostrum.
+        </p>
+      </div>
+  
+      <div class="secteursContGlob">
+  
+        <div class="secteursCont">
+  
+          <div class="secteursCard">
+            <div class="secteursPhoto">
+              <a href="#">
+                <img src="./asset/img/arras.png" alt="Arras">
+              </a>
+            </div>
+            <div class="text"> <!-- Ajout div.text pour une height-->
+              <div class="secteursCardTitle">
+                <h3>Secteur d'Arras</h3>
+              </div>
+              <div class="secteursCardTxt">
+                <p>Résider dans le secteur d'Arras, où il fait bon vivre. Une nature variée alternant lacs et marais, bois et campagne vallonnée, ou bord de canaux et cours d’eau.</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="secteursCard">
+            <div class="secteursPhoto">
+              <img src="./asset/img/lille.png" alt="Lille">
+            </div>
+            <div class="text">
+              <div class="secteursCardTitle">
+                <h3>Secteur de Lille</h3>
+              </div>
+              <div class="secteursCardTxt">
+                <p>Par sa vitalité culturelle, sa qualité de vie, son dynamisme économique et son énergie festive, le secteur Lillois se présente désormais comme l'incontournable ...</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="secteursCard">
+            <div class="secteursPhoto">
+              <img src="./asset/img/touque.png" alt="Touquet">
+            </div>
+            <div class="text">
+              <div class="secteursCardTitle">
+                <h3>Secteur du Touquet</h3>
+              </div>
+              <div class="secteursCardTxt">
+                <p>Ce charmant secteur de la Côte d'Opale possède un très beau patrimoine architectural anglo-normand représenté par de jolies villas nichées dans les pinèdes. </p>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+  
+      </div>
+  
+    </section>
+
+  <!-- ----- FOOTER ----- -->
+
+  <footer>
+    <div id="footerTop">
+      <a href="#">
+        <img src="./asset/img/logo.png" alt="Logo">
+      </a>
+      <div class="footerLine"></div>
+      <p>Immo'Créa Luxe</p>
     </div>
 
-    <div class="secteursPres">
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure error eaque minima. Nesciunt voluptatibus quod, cumque dolor
-        rerum voluptates dolorem? Vero quasi asperiores explicabo. Officiis, magni modi doloribus a repellat illo velit nostrum
-        dolorem explicabo hic praesentium dolorum, nam consequatur delectus accusamus aperiam sunt, nemo nobis aut? Accusamus
-        placeat cupiditate odit culpa nostrum dolore vel fugiat molestias, aliquid voluptate facilis, enim similique, sunt
-        laboriosam corrupti fuga pariatur inventore nesciunt quod. Non molestiae consequatur doloremque facilis incidunt
-        dolor, doloribus modi nulla beatae sequi recusandae nesciunt error deleniti possimus eveniet, laborum corrupti, nobis
-        dolore aliquam nihil ipsum quod assumenda quae? Assumenda, beatae!
-      </p>
-    </div>
+    <div id="footerBottom">
 
-    <div class="secteursContGlob">
-
-      <div class="secteursCont">
-
-        <div class="secteursCard">
-          <div class="secteursPhoto">
-            <a href="#">
-              <img src="./asset/img/img-arras.png" alt="Arras">
-            </a>
-          </div>
-          <div class="secteursCardTitle">
-            <h3>Secteur d'Arras</h3>
-          </div>
-          <div class="secteursCardTxt">
-            <p>Résider dans le secteur d'Arras, où il fait bon vivre. Une nature variée alternant lacs et marais, bois et campagne
-              vallonnée, ou bord de canaux et cours d’eau.</p>
-          </div>
+      <div class="aboutUs">
+        <div>
+          <h4>À propos</h4>
         </div>
+        <ul>
+          <li><a href="#pres">L'agence</a></li>
+          <li><a href="#services">Les services</a></li>
+          <li><a href="#carrousel">Les actus</a></li>
+          <li><a href="#secteurs">Les secteurs</a></li>
+        </ul>
+      </div>
 
-        <div class="secteursCard">
-          <div class="secteursPhoto">
-            <img src="./asset/img/img-lille.png" alt="Lille">
-          </div>
-          <div class="secteursCardTitle">
-            <h3>Secteur de Lille</h3>
-          </div>
-          <div class="secteursCardTxt">
-            <p>Par sa vitalité culturelle, sa qualité de vie, son dynamisme économique et son énergie festive, le secteur Lillois
-              se présente désormais comme l'incontournable ...</p>
-          </div>
+      <div class="footerContact">
+        <div>
+          <h4>Contact</h4>
         </div>
+        <ul>
+          <li><a href="mailto:Immo-crealuxe@contact.fr">Mail: Immo-crealuxe@contact.fr</a></li>
+          <li><a href="tel:0365879901">Agence: 03 65 87 99 01</a></li>
+          <li><a href="tel:0365879900">Arras: 03 65 87 99 00</a></li>
+          <li><a href="tel:0365879987">Touquet: 03 65 87 99 87</a></li>
+          <li><a href="tel:0365879907">Lille: 03 65 87 99 07</a></li>
+        </ul>
+      </div>
 
-        <div class="secteursCard">
-          <div class="secteursPhoto">
-            <img src="./asset/img/img-touquet.png" alt="Touquet">
-          </div>
-          <div class="secteursCardTitle">
-            <h3>Secteur du Touquet</h3>
-          </div>
-          <div class="secteursCardTxt">
-            <p>Ce charmant secteur de la Côte d'Opale possède un très beau patrimoine architectural anglo-normand représenté
-              par de jolies villas nichées dans les pinèdes. </p>
-          </div>
+      <div class="location">
+        <div>
+          <h4>Localisation</h4>
         </div>
+        <ul>
+          <li>
+            <a href="">2 rue d'Auguste - Arras - 62000</a>
+          </li>
+        </ul>
+      </div>
 
+      <div class="footerSocial">
+        <div>
+          <h4>Suivez-nous</h4>
+        </div>
+        <div class="socialList">
+          <a href="">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
       </div>
 
     </div>
 
-  </section>
+    <div class="legal">
+      <div class="legalLeft">
+        <p>Mentions légales - Tout droits réservés</p>
+      </div>
+      <div>
+        <p>Mentions légales - Tout droits réservés</p>
+      </div>
+    </div>
+  </footer>
 
   <!-- ------ FICHIER JS ------- -->
   <script src="js/index.js"></script>

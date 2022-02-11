@@ -9,6 +9,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style-type: none;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -61,10 +65,6 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-}
-#largeNavBottom ul li,
-#smallNavBottom ul li {
-  list-style-type: none;
 }
 #largeNavBottom a,
 #smallNavBottom a {
@@ -298,10 +298,10 @@ section.header div.social a i:hover {
 /* -- ------ SECTION PRESENTATION ------ -- */
 
 section.presentation {
-  margin: 150px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 150px 0 100px 0;
 }
 
 /* IMG */
@@ -378,16 +378,14 @@ section.presentation div.text a {
 /* -- ---------- SECTION CARROUSEL -------------- -- */
 
 section.carrousel {
-  margin: 250px 0 100px 0;
+  /* margin: 250px 0 100px 0; */
   width: 100%;
-  overflow: hidden;
 }
 
 #slider {
   position: relative;
   width: 100%;
-  display: flex;
-  align-items: center;
+  margin-top: 70px;
 }
 
 section.carrousel img {
@@ -413,11 +411,13 @@ section.carrousel img:hover {
 }
 
 #precedent {
+  top: 50%;
   left: 30px;
   transition: ease-in-out 0.3s;
 }
 
 #suivant {
+  top: 50%;
   right: 30px;
   transition: ease-in-out 0.3s;
 }
@@ -434,58 +434,62 @@ section.carrousel img:hover {
 
 /* -- ---------- SECTION SERVICES -------------- -- */
 
-.services,.secteurs{
-  height:100vh;
-  display:block;
+.services,
+.secteurs {
+  display: block;
 }
 
-.servicesTitle,.maison_titre_page{
-  display:flex;
+.servicesTitle,
+.maison_titre_page {
+  display: flex;
   justify-content: center;
-  width:80%;
-  height:min-content;
-  align-items:center;
-  position:relative;   
+  width: 80%;
+  height: min-content;
+  align-items: center;
+  position: relative;
   padding-top: 50px;
-  margin:auto;
+  margin: auto;
 }
-.maison_titre_page{
-  padding-bottom:70px;
+.maison_titre_page {
+  padding-bottom: 70px;
 }
-.servicesTraitG, .servicesTraitD,.maison_traitG,.maison_traitD{
-  height:1px;
-  width:30%;
-  background-color:#dfc173; 
+.servicesTraitG,
+.servicesTraitD,
+.maison_traitG,
+.maison_traitD {
+  height: 1px;
+  width: 30%;
+  background-color: #dfc173;
   align-self: center;
 }
 
 .servicesH2,
 .secteursH2,
-.maison_h1{
-  margin:50px 20px;
+.maison_h1 {
+  margin: 50px 20px;
   font-size: 48px;
-  color:#dfc173;
+  font-weight: lighter;
+  color: #dfc173;
   font-family: "industrial";
 }
 
 .secteursH2 {
-  margin:50px 20px 50px 0;
+  margin: 50px 20px 50px 0;
 }
 
-.servicesH2{
+.servicesH2 {
   text-align: center;
 }
 
 .servicesBG {
   display: flex;
-  height:min-content;
+  height: min-content;
   min-height: 500px;
-  width:100%;
+  width: 100%;
   justify-content: space-evenly;
   align-items: center;
   position: relative;
   margin-top: 70px;
-
 }
 
 .servicesBG {
@@ -495,28 +499,27 @@ section.carrousel img:hover {
   padding: 50px 0;
 }
 
-.servicesSquaresZoom{
-  width:270px;
-  height:260px;
+.servicesSquaresZoom {
+  width: 270px;
+  height: 260px;
   margin: 10px;
+  transition:0.3s ease-in-out; 
 }
 
 .servicesSquareCont {
-  width:70%;
-  display:flex;
+  width: 70%;
+  display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
-.servicesSquares{
-  width:100%;
-  height:100%;
-  box-shadow: 3px 3px 3px grey;
+.servicesSquares {
+  width: 100%;
+  height: 100%;
   text-align: center;
-  cursor:pointer;
+  cursor: pointer;
   transform-style: preserve-3d;
   transition: 0.5s;
-  
 }
 
 .servicesSquares_front {
@@ -526,41 +529,36 @@ section.carrousel img:hover {
   background-color: white;
 }
 
-.servicesSquares_front img{
+.servicesSquares_front img {
   max-width: 30%;
   height: auto;
   position: relative;
-  padding: 30px 0 10px 0;  
+  padding: 30px 0 10px 0;
 }
 
-.servicesSquares_front h3{
+.servicesSquares_front h3 {
   position: relative;
-  font-family:"industrial";
+  font-family: "industrial";
   font-size: 24px;
-  color:#dfc173;   
+  color: #dfc173;
 }
 
-.servicesSquares_front p{
+.servicesSquares_front p {
   position: relative;
   font-size: 16px;
   margin: 10px 20px 20px;
 }
 
-
 /*zoom et rotation cartess*/
 
-.servicesSquaresZoom:hover{
-  transform:scale(1.02); 
-  transition:0.7s;  
-}
-.servicesSquares_front:Hover{
-  box-shadow: 3px 3px 5px rgb(133, 126, 126);
-  border: 2px #dfc173 solid;
+.servicesSquaresZoom:hover {
+  transform: scale(1.01);
+  box-shadow: #dfc173 0px 1px 4px, #dfc173 0px 0px 0px 3px;
 }
 
 /*fin zoom et rotation*/
 
-.servicesSquares_back{
+.servicesSquares_back {
   transform: rotateY(180deg);
   position: absolute;
   display: flex;
@@ -570,114 +568,214 @@ section.carrousel img:hover {
   left: 0;
   top: 0;
   background-color: white;
-  height: 100%;   
+  height: 100%;
 }
 
-.servicesSquares_back p{
+.servicesSquares_back p {
   padding: 20px;
 }
 
-.servicesSquares_front,.servicesSquares_back{
+.servicesSquares_front,
+.servicesSquares_back {
   backface-visibility: hidden;
-
 }
 
 .servicesSquares.flip {
-  transform: rotateY(180deg); 
+  transform: rotateY(180deg);
 }
 
 /* -- ---------- SECTION SECTEUR -------------- -- */
 
-.secteursTitle{
+section.secteurs {
+  margin: 100px 200px 150px;
+}
+
+.secteursTitle {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 80%;
-  margin: auto;
-  height:min-content;
+  height: min-content;
   position: relative;
-  padding-top:50px;
+  /* padding-top: 50px; */
 }
 
-.secteursTraitD{
-  height:1px;
-  width:50%;
+.secteursTraitD {
+  height: 1px;
+  width: 50%;
   margin-top: 15px;
-  background-color:#dfc173; 
+  background-color: #dfc173;
 }
 
-.secteurs p{
-   align-self: flex-start;
-   font-size: 16px;
-   display:block;
+.secteurs p {
+  align-self: flex-start;
+  font-size: 16px;
+  display: block;
 }
 
 .secteursPres {
   height: min-content;
-  margin:auto;
   position: relative;
-  padding:30px 0;
-  width:80%;
-
+  padding: 20px 0;
+  width: 80%;
 }
 
-.secteursContGlob{
-   display: flex;
-   width: 100%;
-   justify-content: center;
-   align-items: center;
-   height: min-content;
-   position: relative;
-   margin: 50px 0;
+.secteursContGlob {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: min-content;
+  position: relative;
+  margin: 30px 0;
 }
 
-.secteursCont{
-   display: flex;
-   width:70%;
-   height:100%;
-   justify-content: space-around;
-   align-items: center;
-   
+.secteursCont {
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.secteursCard{
-  display: block;
-  max-height: 100%;;
+.secteursCard {
   width: 30%;
-  min-width: 250px;
-  box-shadow: grey 4px 4px 4px;
   background-color: #f9f7ef;
-  border-radius: 5px;
-  margin: 10px 0;
+  transition: 0.5s ease-in-out;
 }
 
-.secteursCard:hover{
-  transform:scale(1.02);
-  transition: 0.7s ease;
+.secteursCard:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  transform: scale(1.005);
 }
 
-.secteursPhoto img{
+.secteursPhoto img {
   width: 100%;
   cursor: pointer;
 }
 
-.secteursCardTitle{
-  text-align: center;
+section.secteurs div.secteursContGlob div.secteursCont div.secteursCard div.text {
+  padding: 20px;
+  height: 250px;
+}
+
+.secteursCardTitle {
   font-family: industrial;
   color:#dfc173;
   font-size: 24px;
-  height: 10%;
-  text-shadow: grey;
-  padding: 20px;
+  margin-bottom: 10px;
 }
 
-.secteursCardTxt{
+.secteursCardTitle h3 {
+  font-weight: lighter;
+}
+
+.secteursCardTxt {
+  height: 40%;
+}
+
+/* -- ------ FOOTER ------ -- */
+
+footer {
+  width: 100%;
+  background: #17152a;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer a {
+  color: white;
+}
+
+#footerTop {
+  width: 80%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "industrial", serif;
+  font-size: 20px;
+}
+
+#footerTop img {
+  width: 80px;
+}
+
+.footerLine {
+  height: 1px;
+  width: 150px;
+  background: white;
+  margin: 15px 0;
+}
+
+#footerBottom {
+  width: 80%;
+  min-height: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px solid#dfc173;
+  border-bottom: 1px solid#dfc173;
+}
+
+.aboutUs,
+.footerContact,
+.location,
+.footerSocial {
+  width: 300px;
+  height: 300px;
+}
+
+.aboutUs h4,
+.footerContact h4,
+.location h4,
+.footerSocial h4 {
+  margin: 20px 0;
+}
+
+.footerSocial h4 {
   text-align: center;
-  padding:10px 10px;
-  height:40%;  
-  padding: 20px;
 }
 
+.aboutUs li,
+.footerContact li,
+.location li,
+.footerSocial li {
+  margin: 20px 0;
+  font-weight: lighter;
+}
+
+.aboutUs li:hover,
+.footerContact li:hover,
+.location li:hover,
+.footerSocial li:hover {
+  font-weight: normal;
+}
+
+.socialList {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.socialList a i {
+  color: white;
+  font-size: 25px;
+  padding: 10px 0;
+  transition: all 0.5s;
+}
+
+.socialList a i:hover {
+  color: #dfc173;
+}
+
+.legal {
+  width: 80%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 /* ----- MEDIA ----- */
 
@@ -704,26 +802,75 @@ section.carrousel img:hover {
   section.presentation div.text {
     margin: 0 100px 0 150px;
   }
+
+  /* ----- SECTION SECTEURS ----- */
+  section.secteurs {
+    margin: 100px 100px;
+  }
+
+  section.secteurs div.secteursContGlob div.secteursCont div.secteursCard div.text {
+    height: 280px;
+  }
+
+  .secteursTraitD {
+    display: none;
+  }
+
+  .secteursH2 {
+    margin: 0 auto 50px;
+  }
+
+  .secteursPres {
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .secteurs p {
+    align-self: inherit;
+  }
+
+  /* ----- FOOTER ----- */
+
+  #footerBottom {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 0;
+  }
+
+  .aboutUs,
+  .footerContact,
+  .location,
+  .footerSocial {
+    height: fit-content;
+    margin: 20px;
+  }
+
+  .legal {
+    justify-content: center;
+  }
+
+  .legalLeft {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1024px) {
   /* ---- SECTION PRESENTATION ---- */
   section.presentation {
     flex-direction: column;
+    margin: 100px 50px;
   }
   section.presentation figure {
     width: 100%;
-    margin-bottom: 0px;
+    margin-bottom: 50px;
   }
   section.presentation figure::after {
-    left: 0;
-    right: 0;
+    display: none;
   }
   section.presentation div.text {
     width: 100%;
     text-align: left;
     margin: 0;
-    padding: 80px 100px 0 100px;
   }
   section.presentation div.text div.sous-title {
     flex-direction: column;
@@ -739,21 +886,27 @@ section.carrousel img:hover {
 
   /* ----- SECTION SERVICE ET SECTEUR ----- */
 
-  .servicesSquareCont{
-    width:95%;
+  .servicesSquareCont {
+    width: 95%;
     justify-content: center;
   }
-  .services,.secteurs{
-    height:min-content;
+  .services,
+  .secteurs {
+    height: min-content;
     align-items: center;
   }
-  /* .servicesSquares,.servicesSquaresZoom{
-    width:160px;
-    height:160px;   
-  } */
 
-  .secteursCont{
+  .secteursCard {
+    width: 80%;
+    margin: 50px 0;
+  }
+
+  .secteursCont {
     flex-direction: column;
+  }
+
+  section.secteurs div.secteursContGlob div.secteursCont div.secteursCard div.text {
+    height: 220px;
   }
 }
 
@@ -782,17 +935,40 @@ section.carrousel img:hover {
     font-size: 60px;
     padding: 0 10px;
   }
+  section.carrousel img {
+    height: 400px;
+    object-fit: cover;
+  }
 }
 
 @media screen and (max-width: 600px) {
+  section.presentation div.text h2,
+  .servicesH2,
+  .secteursH2
+   {
+    font-size: 36px;
+  }
+  /*-- ----- SECTION HEADER ----- -- */
   section.header div.border {
     margin: 0 50px;
   }
   section.header div.social {
     display: none;
   }
-  section.presentation div.text {
-    padding: 150px 50px 0 50px;
+  /*-- ----- SECTION SECTEURS SERVCES ---- -- */
+  section.secteurs {
+    margin: 100px 50px;
+  }
+  .secteursCard {
+    width: 100%;
+    margin: 50px 0;
+  }
+  /*-- ---- SECTION CARROUSEL ---- -- */
+  #slider {
+    margin-top: 20px;
+  }
+  section.presentation {
+    margin: 100px 50px 0 50px;
   }
 }
 

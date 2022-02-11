@@ -878,6 +878,7 @@ section.agents div.content-2 {
 
 section.agents div.content-2 figure {
   width: 50%;
+  position: relative;
 }
 section.agents div.content-2 figure img {
   margin: 0 auto;
@@ -886,7 +887,51 @@ section.agents div.content-2 figure img {
   border-radius: 500px;
   padding: 50px;
   transition: all .5s ease-in-out;
+  position: relative;
 }
+
+section.agents div.content-2 figure.zen::after {
+  position: absolute;
+  content: url(../asset/img/zen.png);
+  right: 200px;
+  top: 20px;
+}
+section.agents div.content-2 figure.zen::before {
+  position: absolute;
+  content: url(../asset/img/verre.png);
+  bottom: 50px;
+  left: 150px;
+  z-index: 1;
+}
+
+section.agents div.content-2 figure.fleur::after {
+  position: absolute;
+  content: url(../asset/img/fleurs-1.png);
+  right: 200px;
+  top: 40px;
+}
+section.agents div.content-2 figure.fleur::before {
+  position: absolute;
+  content: url(../asset/img/sourire.png);
+  bottom: 20px;
+  left: 300px;
+  z-index: 1;
+}
+
+section.agents div.content-2 figure.actif::after {
+  position: absolute;
+  content: url(../asset/img/appareil-photo.png);
+  right: 130px;
+  bottom: 10px;
+}
+section.agents div.content-2 figure.actif::before {
+  position: absolute;
+  content: url(../asset/img/superactive.png);
+  top: 20px;
+  left: 200px;
+  z-index: 1;
+}
+
 
 section.agents div.content-2 figure img:hover {
   transform: scale(1.02) rotate(2deg);
@@ -937,6 +982,7 @@ section.agents div.content-2 div.text-2 p:nth-of-type(4) {
 .right {
   text-align: right;
 }
+
 
 /* ----- MEDIA ----- */
 

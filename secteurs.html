@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immo'Créa Luxe - Nos Maisons</title>
+
+    <!-- ------ FONT POPPINS ------ -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet" />
+
+    <!-- ------ LINK FONTAWESOME ------ -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" />
+
+    <!-- ------ LINK CSS ------- -->
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- ----- MENU BURGER ----- -->
+
+    <div id="burgerMenu">
+        <i id="burgerMenuI" class="fas"></i>
+    </div>
+
+    <!-- ----- SCROLL TO TOP ----- -->
+
+    <div id="scrollToTop" class="scrollToTopHidden">
+        <i id="scrollToTopI" class="fa fa-arrow-up"></i>
+    </div>
+
+    <!-- ----- LARGE NAV ----- -->
+
+    <nav id="largeNav">
+        <div id="largeNavTop">
+            <a href="index.html">
+                <img src="./asset/img/logo.png" alt="Logo">
+            </a>
+            <p>Immo'Créa Luxe</p>
+        </div>
+        <div id="largeNavBottom">
+            <ul>
+                <li>
+                    <a href="./index.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="./secteurs.html" class="navActive">Maisons</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Agents</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ----- SMALL NAV ----- -->
+
+    <nav id="smallNav" class="smallNavHidden">
+        <div id="smallNavTop">
+            <a href="index.html">
+                <img src="./asset/img/logo.png" alt="Logo">
+            </a>
+            <p>Immo'Créa Luxe</p>
+        </div>
+        <div id="smallNavBottom">
+            <ul>
+                <li>
+                    <a href="#" class="navActive">Accueil</a>
+                </li>
+                <li>
+                    <a href="./secteurs.html">Maisons</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Agents</a>
+                </li>
+            </ul>
+        </div>
+        <div id="smallNavSocial"></div>
+    </nav>
+
+    <!-- ----- SECTION HEADER-CONTACT ----- -->
+
+    <section class="header-contact">
+        <img src="asset/img/header-contact.png" alt="">
+    </section>
+
+
+    <div class="secteurNav" id="myBtnContainer">
+        <h3 class="btn active" id="allBtn">Toutes</h3>
+        <h3 class="btn" id="lilleBtn">Lille</h3>
+        <h3 class="btn" id="arrasBtn">Arras</h3>
+        <h3 class="btn" id="touquetBtn">Touquet</h3>
+    </div>
+
+    <section class="secteurCont">
+        <main>
+            <!-- maisons Le touquet-->
+            <div class="secteurMaisonCadrePrinc filterDiv touquet">
+                <div class="overlay">
+                    <span id="text" onclick=hideShow()>texte</span>
+                </div>
+                <div class="secteurCadreImage">
+                    <div class="secteurContImage">
+                        <img src="./asset/img/touquet 1-1.jpg" alt="touquet 1-1">
+                    </div>
+                </div>
+                <div class="SecteurTexte">
+                    <div class="contLieuPrix">
+                        <span class="lieu">Le Touquet</span>
+                        <span class="prix">
+                            <b>Prix : </b>2 940 000 €</span>
+                    </div>
+                    <span class="type">
+                        <b>Type : </b>Maison</span>
+                </div>
+            </div>
+
+            <div class="secteurMaisonCadrePrinc filterDiv touquet">
+                <div class="overlay">
+                    <span>texte</span>
+                </div>
+                <div class="secteurCadreImage">
+                    <div class="secteurContImage">
+                        <img src="./asset/img/touquet 2-1.jpg" alt="touquet 2-1">
+                    </div>
+                </div>
+                <div class="SecteurTexte">
+                    <div class="contLieuPrix">
+                        <span class="lieu">Le Touquet</span>
+                        <span class="prix">
+                            <b>Prix : </b>1 680 000 €</span>
+                    </div>
+                    <span class="type">
+                        <b>Type : </b>Maison</span>
+                </div>
+            </div>
+
+            <div class="secteurMaisonCadrePrinc filterDiv touquet">
+                <div class="overlay">
+                    <a href="">
+                        <span>texte</span>
+                    </a>
+                </div>
+                <div class="secteurCadreImage">
+                    <div class="secteurContImage">
+                        <img src="./asset/img/touquet 3-1.jpg" alt="touquet 3-1.jpg">
+                    </div>
+                </div>
+                <div class="SecteurTexte">
+                    <div class="contLieuPrix">
+                        <span class="lieu">Le Touquet</span>
+                        <span class="prix">
+                            <b>Prix : </b>1 560 000 €</span>
+                    </div>
+                    <span class="type">
+                        <b>Type : </b>Maison</span>
+                </div>
+            </div>
+
+            <div class="secteurMaisonCadrePrinc filterDiv touquet">
+                <div class="overlay">
+                    <a href="">
+                        <span>texte</span>
+                    </a>
+                </div>
+                <div class="secteurCadreImage">
+                    <div class="secteurContImage">
+                        <img src="./asset/img/touquet 4-1.jpg" alt="touquet 4-1">
+                    </div>
+                </div>
+                <div class="SecteurTexte">
+                    <div class="contLieuPrix">
+                        <span class="lieu">Le Touquet</span>
+                        <span class="prix">
+                            <b>Prix : </b>699 000 €</span>
+                    </div>
+                    <span class="type">
+                        <b>Type : </b>Maison</span>
+                </div>
+            </div>
+
+            <div class="secteurMaisonCadrePrinc filterDiv touquet">
+                <div class="overlay">
+                    <a href="">
+                        <span>texte</span>
+                    </a>
+                </div>
+                <div class="secteurCadreImage">
+                    <div class="secteurContImage">
+                        <img src="./asset/img/touquet 5-1.jpg" alt="touquet 5-1">
+                    </div>
+                </div>
+                <div class="SecteurTexte">
+                    <div class="contLieuPrix">
+                        <span class="lieu">Le Touquet</span>
+                        <span class="prix">
+                            <b>Prix : </b>1 895 000 €</span>
+                    </div>
+                    <span class="type">
+                        <b>Type : </b>Maison</span>
+                </div>
+            </div>
+
+            <div class="secteurMaisonCadrePrinc filterDiv touquet">
+                <div class="overlay">
+                    <a href="">
+                        <span>texte</span>
+                    </a>
+                </div>
+                <div class="secteurCadreImage">
+                    <div class="secteurContImage">
+                        <img src="./asset/img/touquet 6-1.jpg" alt="touquet 6-1">
+                    </div>
+                </div>
+                <div class="SecteurTexte">
+                    <div class="contLieuPrix">
+                        <span class="lieu">Le Touquet</span>
+                        <span class="prix">
+                            <b>Prix : </b>1 399 000 €</span>
+                    </div>
+                    <span class="type">
+                        <b>Type : </b>Maison</span>
+                </div>
+            </div>
+
+            <div class="secteurMaisonCadrePrinc filterDiv touquet">
+                <div class="overlay">
+                    <a href="">
+                        <span>texte</span>
+                    </a>
+                </div>
+                <div class="secteurCadreImage">
+                    <div class="secteurContImage">
+                        <img src="./asset/img/touquet 7-1.jpg" alt="touquet 7-1">
+                    </div>
+                </div>
+                <div class="SecteurTexte">
+                    <div class="contLieuPrix">
+                        <span class="lieu">Le Touquet</span>
+                        <span class="prix">
+                            <b>Prix : </b>997 500 €</span>
+                    </div>
+                    <span class="type">
+                        <b>Type : </b>Maison</span>
+                </div>
+            </div>
+
+            <div class="secteurMaisonCadrePrinc filterDiv touquet">
+                <div class="overlay">
+                    <a href="">
+                        <span>texte</span>
+                    </a>
+                </div>
+                <div class="secteurCadreImage">
+                    <div class="secteurContImage">
+                        <img src="./asset/img/touquet 8-1.jpg" alt="touquet 8-1">
+                    </div>
+                </div>
+                <div class="SecteurTexte">
+                    <div class="contLieuPrix">
+                        <span class="lieu">Le Touquet</span>
+                        <span class="prix">
+                            <b>Prix : </b>840 000 €</span>
+                    </div>
+                    <span class="type">
+                        <b>Type : </b>Maison</span>
+                </div>
+            </div>
+
+            <div class="secteurMaisonCadrePrinc filterDiv touquet">
+                <div class="overlay">
+                    <a href="">
+                        <span>texte</span>
+                    </a>
+                </div>
+                <div class="secteurCadreImage">
+                    <div class="secteurContImage">
+                        <img src="./asset/img/touquet 9-1.jpg" alt="touquet 9-1">
+                    </div>
+                </div>
+                <div class="SecteurTexte">
+                    <div class="contLieuPrix">
+                        <span class="lieu">Le Touquet</span>
+                        <span class="prix">
+                            <b>Prix : </b>735 000 €</span>
+                    </div>
+                    <span class="type">
+                        <b>Type : </b>Maison</span>
+                </div>
+            </div>
+
+            <div class="secteurMaisonCadrePrinc filterDiv touquet">
+                <div class="overlay">
+                    <a href="">
+                        <span>texte</span>
+                    </a>
+                </div>
+                <div class="secteurCadreImage">
+                    <div class="secteurContImage">
+                        <img src="./asset/img/touquet 10-1.jpg" alt="touquet 10-1">
+                    </div>
+                </div>
+                <div class="SecteurTexte">
+                    <div class="contLieuPrix">
+                        <span class="lieu">Le Touquet</span>
+                        <span class="prix">
+                            <b>Prix : </b>640 200 €</span>
+                    </div>
+                    <span class="type">
+                        <b>Type : </b>Maison</span>
+                </div>
+            </div>
+
+
+            <!-- maisons Arras-->
+            <div class="secteurMaisonCadrePrinc filterDiv arras">
+                <div class="overlay">
+                    <span id="text" onclick=hideShow()>texte</span>
+                </div>
+                <div class="secteurCadreImage">
+                    <div class="secteurContImage">
+                        <img src="./asset/img/arras 1-1.jpg" alt="arras 1-1">
+                    </div>
+                </div>
+                <div class="SecteurTexte">
+                    <div class="contLieuPrix">
+                        <span class="lieu">Arras</span>
+                        <span class="prix">
+                            <b>Prix : </b>980 000 €</span>
+                    </div>
+                    <span class="type">
+                        <b>Type : </b>Maison</span>
+                </div>
+
+            </div>
+
+            <div class="secteurMaisonCadrePrinc filterDiv arras">
+                <div class="overlay">
+                    <span>texte</span>
+                </div>
+                <div class="secteurCadreImage">
+                    <div class="secteurContImage">
+                        <img src="./asset/img/arras 2-1.jpg" alt="arras 2-1">
+                    </div>
+                </div>
+                <div class="SecteurTexte">
+                    <div class="contLieuPrix">
+                        <span class="lieu">Arras</span>
+                        <span class="prix">
+                            <b>Prix : </b>750 000 €</span>
+                    </div>
+                    <span class="type">
+                        <b>Type : </b>Maison</span>
+                </div>
+
+            </div>
+
+            <div class="secteurMaisonCadrePrinc filterDiv arras">
+                <div class="overlay">
+                    <a href="">
+                        <span>texte</span>
+                    </a>
+                </div>
+                <div class="secteurCadreImage">
+                    <div class="secteurContImage">
+                        <img src="./asset/img/arras 3-1.jpg" alt="arras 3-1">
+                    </div>
+                </div>
+                <div class="SecteurTexte">
+                    <div class="contLieuPrix">
+                        <span class="lieu">Arras</span>
+                        <span class="prix">
+                            <b>Prix : </b>475 000 €</span>
+                    </div>
+                    <span class="type">
+                        <b>Type : </b>Maison</span>
+                </div>
+
+            </div>
+
+            <div class="secteurMaisonCadrePrinc filterDiv arras">
+                <div class="overlay">
+                    <a href="">
+                        <span>texte</span>
+                    </a>
+                </div>
+                <div class="secteurCadreImage">
+                    <div class="secteurContImage">
+                        <img src="./asset/img/arras 4-1.jpg" alt="arras 4-1">
+                    </div>
+                </div>
+                <div class="SecteurTexte">
+                    <div class="contLieuPrix">
+                        <span class="lieu">Arras</span>
+                        <span class="prix">
+                            <b>Prix : </b>850 000 €</span>
+                    </div>
+                    <span class="type">
+                        <b>Type : </b>Maison</span>
+                </div>
+
+            </div>
+
+            <div class="secteurMaisonCadrePrinc filterDiv arras">
+                <div class="overlay">
+                    <a href="">
+                        <span>texte</span>
+                    </a>
+                </div>
+                <div class="secteurCadreImage">
+                    <div class="secteurContImage">
+                        <img src="./asset/img/arras 5-1.jpg" alt="arras 5-1.jpg">
+                    </div>
+                </div>
+                <div class="SecteurTexte">
+                    <div class="contLieuPrix">
+                        <span class="lieu">Arras</span>
+                        <span class="prix">
+                            <b>Prix : </b>479 000 €</span>
+                    </div>
+                    <span class="type">
+                        <b>Type : </b>Maison</span>
+                </div>
+            </div>
+
+            <div class="secteurMaisonCadrePrinc filterDiv arras">
+                <div class="overlay">
+                    <a href="">
+                        <span>texte</span>
+                    </a>
+                </div>
+                <div class="secteurCadreImage">
+                    <div class="secteurContImage">
+                        <img src="./asset/img/arras 6-1.jpg" alt="arras 6-1">
+                    </div>
+                </div>
+                <div class="SecteurTexte">
+                    <div class="contLieuPrix">
+                        <span class="lieu">Arras</span>
+                        <span class="prix">
+                            <b>Prix : </b>696 800 €</span>
+                    </div>
+                    <span class="type">
+                        <b>Type : </b>Appartement</span>
+                </div>
+
+            </div>
+
+            <div class="secteurMaisonCadrePrinc filterDiv arras">
+                <div class="overlay">
+                    <a href="">
+                        <span>texte</span>
+                    </a>
+                </div>
+                <div class="secteurCadreImage">
+                    <div class="secteurContImage">
+                        <img src="./asset/img/arras 7-1.jpg" alt="arras 7-1">
+                    </div>
+                </div>
+                <div class="SecteurTexte">
+                    <div class="contLieuPrix">
+                        <span class="lieu">Arras</span>
+                        <span class="prix">
+                            <b>Prix : </b>1 434 000 €</span>
+                    </div>
+                    <span class="type">
+                        <b>Type : </b>Maison</span>
+                </div>
+            </div>
+
+            <div class="secteurMaisonCadrePrinc filterDiv arras">
+                <div class="overlay">
+                    <a href="">
+                        <span>texte</span>
+                    </a>
+                </div>
+                <div class="secteurCadreImage">
+                    <div class="secteurContImage">
+                        <img src="./asset/img/arras 8-1.jpg" alt="arras 8-1">
+                    </div>
+                </div>
+                <div class="SecteurTexte">
+                    <div class="contLieuPrix">
+                        <span class="lieu">Arras</span>
+                        <span class="prix">
+                            <b>Prix : </b>514 500 €</span>
+                    </div>
+                    <span class="type">
+                        <b>Type : </b>Maison</span>
+                </div>
+
+            </div>
+
+            <div class="secteurMaisonCadrePrinc filterDiv arras">
+                <div class="overlay">
+                    <a href="">
+                        <span>texte</span>
+                    </a>
+                </div>
+                <div class="secteurCadreImage">
+                    <div class="secteurContImage">7
+                        <img src="./asset/img/arras 9-1.jpg" alt="arras 9-1">
+                    </div>
+                </div>
+                <div class="SecteurTexte">
+                    <div class="contLieuPrix">
+                        <span class="lieu">Arras</span>
+                        <span class="prix">
+                            <b>Prix : </b>1 200 000 €</span>
+                    </div>
+                    <span class="type">
+                        <b>Type : </b>Maison</span>
+                </div>
+            </div>
+
+            <div class="secteurMaisonCadrePrinc filterDiv arras">
+                <div class="overlay">
+                    <a href="">
+                        <span>texte</span>
+                    </a>
+                </div>
+                <div class="secteurCadreImage">
+                    <div class="secteurContImage">
+                        <img src="./asset/img/arras 10-1.jpg" alt="arras 10-1">
+                    </div>
+                </div>
+                <div class="SecteurTexte">
+                    <div class="contLieuPrix">
+                        <span class="lieu">Arras</span>
+                        <span class="prix">
+                            <b>Prix : </b>970 000 €</span>
+                    </div>
+                    <span class="type">
+                        <b>Type : </b>Maison</span>
+                </div>
+
+            </div>
+
+            <!-- maisons Lille-->
+
+            <div class="secteurMaisonCadrePrinc filterDiv lille">
+                <div class="overlay">
+                    <span id="text" onclick=hideShow()>texte</span>
+                </div>
+                <div class="secteurCadreImage">
+                    <div class="secteurContImage">
+                        <img src="./asset/img/lille 1-1.jpg" alt="lille 1-1">
+                    </div>
+                </div>
+                <div class="SecteurTexte">
+                    <div class="contLieuPrix">
+                        <span class="lieu">Lille</span>
+                        <span class="prix">
+                            <b>Prix : </b>1 099 000 €</span>
+                    </div>
+                    <span class="type">
+                        <b>Type : </b>Appartement</span>
+                </div>
+            </div>
+
+            <div class="secteurMaisonCadrePrinc filterDiv lille">
+                <div class="overlay">
+                    <span>texte</span>
+                </div>
+                <div class="secteurCadreImage">
+                    <div class="secteurContImage">
+                        <img src="./asset/img/lille 2-1.jpg" alt="lille 2-1.jpg">
+                    </div>
+                </div>
+                <div class="SecteurTexte">
+                    <div class="contLieuPrix">
+                        <span class="lieu">Lille</span>
+                        <span class="prix">
+                            <b>Prix : </b>1 095 000 €</span>
+                    </div>
+                    <span class="type">
+                        <b>Type : </b>Appartement</span>
+                </div>
+
+            </div>
+
+            <div class="secteurMaisonCadrePrinc filterDiv lille">
+                <div class="overlay">
+                    <a href="">
+                        <span>texte</span>
+                    </a>
+                </div>
+                <div class="secteurCadreImage">
+                    <div class="secteurContImage">
+                        <img src="./asset/img/lille 3-1.jpg" alt="lille 3-1">
+                    </div>
+                </div>
+                <div class="SecteurTexte">
+                    <div class="contLieuPrix">
+                        <span class="lieu">Lille</span>
+                        <span class="prix">
+                            <b>Prix : </b>2 100 000 €</span>
+                    </div>
+                    <span class="type">
+                        <b>Type : </b>Maison</span>
+                </div>
+
+            </div>
+
+            <div class="secteurMaisonCadrePrinc filterDiv lille">
+                <div class="overlay">
+                    <a href="">
+                        <span>texte</span>
+                    </a>
+                </div>
+                <div class="secteurCadreImage">
+                    <div class="secteurContImage">
+                        <img src="./asset/img/lille 4-1.jpg" alt="lille 4-1">
+                    </div>
+                </div>
+                <div class="SecteurTexte">
+                    <div class="contLieuPrix">
+                        <span class="lieu">Lille</span>
+                        <span class="prix">
+                            <b>Prix : </b>636 000</span>
+                    </div>
+                    <span class="type">
+                        <b>Type : </b>Maison</span>
+                </div>
+
+            </div>
+
+            <div class="secteurMaisonCadrePrinc filterDiv lille">
+                <div class="overlay">
+                    <a href="">
+                        <span>texte</span>
+                    </a>
+                </div>
+                <div class="secteurCadreImage">
+                    <div class="secteurContImage">
+                        <img src="./asset/img/lille 5-1.jpg" alt="lille 5-1">
+                    </div>
+                </div>
+                <div class="SecteurTexte">
+                    <div class="contLieuPrix">
+                        <span class="lieu">Lille</span>
+                        <span class="prix">
+                            <b>Prix : </b>1 690 000 €</span>
+                    </div>
+                    <span class="type">
+                        <b>Type : </b>Appartement</span>
+                </div>
+
+            </div>
+
+            <div class="secteurMaisonCadrePrinc filterDiv lille">
+                <div class="overlay">
+                    <a href="">
+                        <span>texte</span>
+                    </a>
+                </div>
+                <div class="secteurCadreImage">
+                    <div class="secteurContImage">
+                        <img src="./asset/img/lille 6-1.jpg" alt="lille 6-1">
+                    </div>
+                </div>
+                <div class="SecteurTexte">
+                    <div class="contLieuPrix">
+                        <span class="lieu">Lille</span>
+                        <span class="prix">
+                            <b>Prix : </b>2 690 000 €</span>
+                    </div>
+                    <span class="type">
+                        <b>Type : </b>Appartement</span>
+                </div>
+            </div>
+
+            <div class="secteurMaisonCadrePrinc filterDiv lille">
+                <div class="overlay">
+                    <a href="">
+                        <span>texte</span>
+                    </a>
+                </div>
+                <div class="secteurCadreImage">
+                    <div class="secteurContImage">
+                        <img src="./asset/img/lille 7-1.jpg" alt="lille 7-1">
+                    </div>
+                </div>
+                <div class="SecteurTexte">
+                    <div class="contLieuPrix">
+                        <span class="lieu">Lille</span>
+                        <span class="prix">
+                            <b>Prix : </b>1 590 000 €</span>
+                    </div>
+                    <span class="type">
+                        <b>Type : </b>Appartement</span>
+                </div>
+
+            </div>
+
+            <div class="secteurMaisonCadrePrinc filterDiv lille">
+                <div class="overlay">
+                    <a href="">
+                        <span>texte</span>
+                    </a>
+                </div>
+                <div class="secteurCadreImage">
+                    <div class="secteurContImage">
+                        <img src="./asset/img/lille 8-1.jpg" alt="lille 8-1">
+                    </div>
+                </div>
+                <div class="SecteurTexte">
+                    <div class="contLieuPrix">
+                        <span class="lieu">Lille</span>
+                        <span class="prix">
+                            <b>Prix : </b>2 790 000 €</span>
+                    </div>
+                    <span class="type">
+                        <b>Type : </b>Maison</span>
+                </div>
+
+            </div>
+
+            <div class="secteurMaisonCadrePrinc filterDiv lille">
+                <div class="overlay">
+                    <a href="">
+                        <span>texte</span>
+                    </a>
+                </div>
+                <div class="secteurCadreImage">
+                    <div class="secteurContImage">
+                        <img src="./asset/img/lille 9-1.jpg" alt="lille 9-1">
+                    </div>
+                </div>
+                <div class="SecteurTexte">
+                    <div class="contLieuPrix">
+                        <span class="lieu">Lille</span>
+                        <span class="prix">
+                            <b>Prix : </b>1 750 000 €</span>
+                    </div>
+                    <span class="type">
+                        <b>Type : </b>Maison</span>
+                </div>
+            </div>
+
+            <div class="secteurMaisonCadrePrinc filterDiv lille">
+                <div class="overlay">
+                    <a href="">
+                        <span>texte</span>
+                    </a>
+                </div>
+                <div class="secteurCadreImage">
+                    <div class="secteurContImage">
+                        <img src="./asset/img/lille 10-1.jpg" alt="lille 10-1.jpg">
+                    </div>
+                </div>
+                <div class="SecteurTexte">
+                    <div class="contLieuPrix">
+                        <span class="lieu">Lille</span>
+                        <span class="prix">
+                            <b>Prix : </b> 2 490 000 €</span>
+                    </div>
+                    <span class="type">
+                        <b>Type : </b>Maison</span>
+                </div>
+            </div>
+        </main>
+    </section>
+    <!-- ----- JS ----- -->
+    <script type="text/javascript" src="./js/index.js"></script>
+</body>
+
+</html>

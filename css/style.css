@@ -301,7 +301,7 @@ section.presentation {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 150px 0 100px 0;
+  margin: 150px 0 150px 0;
 }
 
 /* IMG */
@@ -349,14 +349,14 @@ section.presentation div.text div.sous-title {
 section.presentation div.text div.sous-title div.ligne {
   background-color: #dfc173;
   height: 1px;
-  width: 75%;
+  width: 70%;
   margin-top: 10px;
 }
 
 section.presentation div.text div.sous-title p {
   color: #dfc173;
   font-weight: 500;
-  width: 25%;
+  width: 30%;
 }
 
 section.presentation div.text p {
@@ -380,6 +380,7 @@ section.presentation div.text a {
 section.carrousel {
   /* margin: 250px 0 100px 0; */
   width: 100%;
+  overflow-x: hidden;
 }
 
 #slider {
@@ -503,7 +504,7 @@ section.carrousel img:hover {
   width: 270px;
   height: 260px;
   margin: 10px;
-  transition:0.3s ease-in-out; 
+  transition: 0.3s ease-in-out;
 }
 
 .servicesSquareCont {
@@ -643,7 +644,8 @@ section.secteurs {
 }
 
 .secteursCard:hover {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   transform: scale(1.005);
 }
 
@@ -652,14 +654,18 @@ section.secteurs {
   cursor: pointer;
 }
 
-section.secteurs div.secteursContGlob div.secteursCont div.secteursCard div.text {
+section.secteurs
+  div.secteursContGlob
+  div.secteursCont
+  div.secteursCard
+  div.text {
   padding: 20px;
   height: 250px;
 }
 
 .secteursCardTitle {
   font-family: "industrial", serif;
-  color:#dfc173;
+  color: #dfc173;
   font-size: 24px;
   margin-bottom: 10px;
 }
@@ -777,8 +783,6 @@ footer a {
   align-items: center;
 }
 
-
-
 /* -- --------------------------------------- PAGE CONTACT ----------------------------*/
 
 /* -- ---- SECTION HEADER-CONTACT ---- -- */
@@ -815,7 +819,7 @@ section.contact div.text p:nth-of-type(3) {
   font-size: 16px;
   font-weight: normal;
   padding: 10px 0 50px 0;
-} 
+}
 section.contact div.text hr {
   border: none;
   background-color: #dfc173;
@@ -834,13 +838,13 @@ section.contact div.container div.content {
   height: 200px;
   padding: 30px;
   border: #dfc173 1px solid;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 section.contact div.container div.content:hover {
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
-section.contact div.container div.content:hover hr{
+section.contact div.container div.content:hover hr {
   width: 40%;
 }
 
@@ -855,7 +859,7 @@ section.contact div.container div.content hr {
   background-color: black;
   height: 4px;
   width: 15%;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 section.contact div.container div.content p:nth-of-type(2) {
@@ -886,7 +890,7 @@ section.agents div.content-2 figure img {
   border: #dfc173 1px solid;
   border-radius: 500px;
   padding: 50px;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   position: relative;
 }
 
@@ -932,7 +936,6 @@ section.agents div.content-2 figure.actif::before {
   z-index: 1;
 }
 
-
 section.agents div.content-2 figure img:hover {
   transform: scale(1.02) rotate(2deg);
 }
@@ -940,14 +943,14 @@ section.agents div.content-2 div.text-2 {
   width: 50%;
 }
 
-section.agents div.content-2 div.text-2 p:nth-of-type(1){
+section.agents div.content-2 div.text-2 p:nth-of-type(1) {
   font-family: "industrial";
   font-size: 48px;
   font-weight: lighter;
   color: #dfc173;
 }
 
-section.agents div.content-2 div.text-2 p:nth-of-type(2){
+section.agents div.content-2 div.text-2 p:nth-of-type(2) {
   font-family: "industrial";
   font-size: 48px;
   font-weight: lighter;
@@ -972,7 +975,7 @@ section.agents div.content-2 div.text-2 p:nth-of-type(4) {
   color: black;
   font-size: 16px;
   font-weight: 300;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .lien a:hover {
@@ -1004,7 +1007,7 @@ section.agents div.content-2 div.text-2 p:nth-of-type(4) {
   align-items: center;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  color:#dfc173;
+  color: #dfc173;
   font-size: 20px;
   letter-spacing: 2px;
 }
@@ -1012,12 +1015,13 @@ section.agents div.content-2 div.text-2 p:nth-of-type(4) {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 100px;
 }
 main {
   width: 80%;
   display: flex;
   justify-content: center;
-  height:max-content;
+  height: max-content;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -1035,13 +1039,13 @@ main {
   background-color: white;
   margin: 20px 20px;
   position: relative;
-  color:black;
+  color: black;
   display: none;
 }
 .show {
   display: block;
 }
-.overlay{
+.overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1050,19 +1054,19 @@ main {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
+  transition: 0.5s ease-in-out;
   background-color: #17152a;
   justify-content: center;
   align-items: center;
   display: flex;
-  color:white;
+  color: white;
   z-index: 1;
 }
 .overlay span {
-  font-size:24px;
-  border:1px solid white;
+  font-size: 18px;
+  border: 1px solid white;
   padding: 10px 10px;
-  color:white;
+  color: white;
   cursor: pointer;
 }
 .overlay a {
@@ -1072,56 +1076,56 @@ main {
   opacity: 0.9;
 }
 
-.secteurMaisonCadrePrinc:hover .secteurContImage img{
-  transform:scale(1.1);
-  transition:0.5s;
+.secteurMaisonCadrePrinc:hover .secteurContImage img {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 
 .secteurCadreImage {
-  width:100%;
-  height:80%;
+  width: 100%;
+  height: 80%;
 }
 
 .secteurContImage {
   width: 100%;
-  max-height:280px ;
+  max-height: 280px;
   overflow: hidden;
 }
 
 .secteurContImage img {
-  height:100%;
-  width:100%;
+  height: 100%;
+  width: 100%;
+  transition: 0.5s ease-in-out;
 }
 
 .SecteurTexte {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size:18px;
+  font-size: 18px;
   border: 1px solid #dfc173;
-  padding:10px;
+  padding: 10px;
 }
 .contLieuPrix {
-  height:100%;
-  width:60%;
-  display:flex;
-  flex-direction:column;
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
   border-right: #dfc173 1px solid;
 }
 .lieu {
   font-family: "industrial", serif;
-  color:#dfc173;
+  color: #dfc173;
   font-size: 22px;
 }
 .type {
-  width:40%;
+  width: 40%;
   text-align: start;
-  padding-left: 10px;;
-
+  padding-left: 10px;
 }
 .hiddenContainer {
-  width:90%;
-  height:90%;
+  width: 90%;
+  height: 90%;
   justify-content: center;
   z-index: 2;
   background-color: white;
@@ -1129,11 +1133,11 @@ main {
   position: fixed;
   display: none;
   margin: 0 5%;
-  border:1px solid #dfc173
+  border: 1px solid #dfc173;
 }
-.hiddenContainer img{
-  width:25%;
-  margin:20px;
+.hiddenContainer img {
+  width: 25%;
+  margin: 20px;
 }
 
 /* ----- MEDIA ----- */
@@ -1167,7 +1171,11 @@ main {
     margin: 100px 100px;
   }
 
-  section.secteurs div.secteursContGlob div.secteursCont div.secteursCard div.text {
+  section.secteurs
+    div.secteursContGlob
+    div.secteursCont
+    div.secteursCard
+    div.text {
     height: 280px;
   }
 
@@ -1210,6 +1218,34 @@ main {
 
   .legalLeft {
     display: none;
+  }
+
+  /* -- ----- SECTION CONTACT ----- -- */
+  section.contact {
+    padding: 100px;
+  }
+
+  /*-- ----- SECTION AGENTS ----- -- */
+  section.agents {
+    margin: 100px;
+  }
+  section.agents div.content-2 figure.zen::after {
+    right: 100px;
+  }
+  section.agents div.content-2 figure.zen::before {
+    left: 70px;
+  }
+  section.agents div.content-2 figure.fleur::after {
+    right: 100px;
+  }
+  section.agents div.content-2 figure.fleur::before {
+    left: 150px;
+  }
+  section.agents div.content-2 figure.actif::after {
+    right: 30px;
+  }
+  section.agents div.content-2 figure.actif::before {
+    left: 100px;
   }
 }
 
@@ -1264,8 +1300,29 @@ main {
     flex-direction: column;
   }
 
-  section.secteurs div.secteursContGlob div.secteursCont div.secteursCard div.text {
+  section.secteurs
+    div.secteursContGlob
+    div.secteursCont
+    div.secteursCard
+    div.text {
     height: 220px;
+  }
+
+  /* -- ----- AGENTS ----- -- */
+
+  section.agents div.content-2 {
+    flex-direction: column;
+  }
+  section.agents div.content-2.inverse {
+    flex-direction: column-reverse;
+  }
+  section.agents div.content-2 figure {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  section.agents div.content-2 div.text-2 {
+    width: 100%;
+    text-align: center;
   }
 }
 
@@ -1301,9 +1358,34 @@ main {
   /* ----- PAGE CONTACT ----- */
   section.header-contact img {
     top: 0;
-    margin-bottom: 0;
+    margin-bottom: 80px;
   }
-  /* ----- PAGE SECTEURS ----- */  
+  /* -- ----- PAGE CONTACT ----- -- */
+
+  section.contact {
+    padding: 100px 50px;
+  }
+
+  section.contact div.container {
+    flex-direction: column;
+  }
+  section.contact div.container div.content {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  /* -- ------ SECTION AGENTS ------ -- */
+
+  section.agents {
+    margin: 100px 50px;
+  }
+
+  section.agents div.content-2 figure img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* ----- PAGE SECTEURS ----- */
   .secteurNav {
     display: flex;
     flex-direction: column;
@@ -1321,8 +1403,7 @@ main {
 @media screen and (max-width: 600px) {
   section.presentation div.text h2,
   .servicesH2,
-  .secteursH2
-   {
+  .secteursH2 {
     font-size: 36px;
   }
   /*-- ----- SECTION HEADER ----- -- */
@@ -1346,6 +1427,57 @@ main {
   }
   section.presentation {
     margin: 100px 50px 0 50px;
+  }
+  /* -- ----- SECTION CONTACT ------ -- */
+
+  section.contact {
+    padding: 80px 20px;
+  }
+
+  section.contact div.text p {
+    font-size: 36px;
+  }
+
+  /* -- ----- SECTION AGENTS ----- -- */
+
+  section.agents {
+    margin: 80px 20px;
+  }
+
+  section.agents div.content-2 {
+    padding: 50px 20px;
+  }
+
+  section.agents div.content-2 figure.zen::after {
+    right: 20px;
+  }
+
+  section.agents div.content-2 figure.zen::before {
+    left: 20px;
+  }
+
+  section.agents div.content-2 figure.fleur::after {
+    right: 20px;
+  }
+
+  section.agents div.content-2 figure.fleur::before {
+    left: 20px;
+  }
+
+  section.agents div.content-2 figure.actif::after {
+    right: 0;
+  }
+
+  section.agents div.content-2 figure.actif::before {
+    left: 20px;
+  }
+
+  section.agents div.content-2 div.text-2 p:nth-of-type(1) {
+    font-size: 36px;
+  }
+
+  section.agents div.content-2 div.text-2 p:nth-of-type(2) {
+    font-size: 36px;
   }
 }
 

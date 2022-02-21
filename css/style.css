@@ -1123,22 +1123,6 @@ main {
   text-align: start;
   padding-left: 10px;
 }
-.hiddenContainer {
-  width: 90%;
-  height: 90%;
-  justify-content: center;
-  z-index: 2;
-  background-color: white;
-  border-radius: 10px;
-  position: fixed;
-  display: none;
-  margin: 0 5%;
-  border: 1px solid #dfc173;
-}
-.hiddenContainer img {
-  width: 25%;
-  margin: 20px;
-}
 
 /* ----- MEDIA ----- */
 
